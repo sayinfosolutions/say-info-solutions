@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SAY INFO SOLUTIONS — Asesoría Empresarial & Cableado Estructurado</title>
+  <meta name="description" content="SAY INFO SOLUTIONS: asesoría empresarial y montajes de cableado estructurado para pymes de la región." />
+  <style>
+    :root{
+      --bg:#ffffff; --card:#ffffff; --accent:#000000; --muted:#444444;
+      --rounded:12px; --shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111111;line-height:1.5}
+    header{background:var(--accent);color:white;padding:20px}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{height:56px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:rgba(255,255,255,0.9)}
+
+    nav{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    nav a{color:white;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:14px;opacity:0.95}
+    nav a.cta{background:rgba(255,255,255,0.15)}
+
+    main{padding:28px 20px}
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:24px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border-radius:var(--rounded);box-shadow:var(--shadow);padding:18px}
+
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:700px){.services{grid-template-columns:1fr}}
+    .service{display:flex;gap:12px;align-items:flex-start}
+    .icon{width:44px;height:44px;border-radius:10px;background:#eaeaea;display:flex;align-items:center;justify-content:center}
+    .service h4{margin:0;font-size:15px}
+    .service p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    .about p{color:var(--muted);margin:8px 0 0}
+
+    footer{padding:18px 20px;margin-top:22px;text-align:center;color:var(--muted);font-size:14px;background:#f5f5f5}
+
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #cccccc;font-size:14px;width:100%}
+    button{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+
+    .muted{color:var(--muted);font-size:13px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .chip{display:inline-block;padding:6px 8px;border-radius:999px;background:#f2f2f2;color:var(--accent);font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <!-- Cambia logo.png por el archivo real -->
+        <img src="logo.png" alt="Logo SAY INFO SOLUTIONS" class="logo">
+        <div>
+          <h1>SAY INFO SOLUTIONS</h1>
+          <p class="lead">Asesoría empresarial y montajes de cableado estructurado para pymes de la región</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Acerca</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact" class="cta">Contactar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <section>
+        <div class="card about" id="about">
+          <h2>Quiénes somos</h2>
+          <p>SAY INFO SOLUTIONS es una empresa regional dedicada a brindar asesoría empresarial y soluciones tecnológicas mediante el diseño, instalación y mantenimiento de cableado estructurado. Nuestro propósito es fortalecer la competitividad de las organizaciones y acompañarlas en sus procesos de modernización.</p>
+
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <div class="chip">Asesoría empresarial</div>
+            <div class="chip">Cableado estructurado</div>
+            <div class="chip">Capacitación</div>
+            <div class="chip">Soporte técnico</div>
+          </div>
+        </div>
+
+        <div id="services" class="card" style="margin-top:16px">
+          <h3>Servicios</h3>
+          <div class="services">
+            <div class="service">
+              <div class="icon">🔧</div>
+              <div>
+                <h4>Montaje de cableado estructurado</h4>
+                <p>Diseño e instalación de redes cableadas, patch panels, certificación y pruebas de rendimiento.</p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">📊</div>
+              <div>
+                <h4>Asesoría empresarial</h4>
+                <p>Formulación de planes estratégicos, gestión administrativa y apoyo en acceso a programas de financiación.</p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">🛠️</div>
+              <div>
+                <h4>Mantenimiento y soporte</h4>
+                <p>Mantenimiento preventivo y correctivo de redes, solución de fallas y optimización de infraestructura.</p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">🎓</div>
+              <div>
+                <h4>Capacitación</h4>
+                <p>Formación para personal en gestión empresarial y prácticas de instalación y operación de redes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Misión</h3>
+          <p class="muted">Brindar asesoría empresarial y soluciones tecnológicas a organizaciones de la región, mediante el acompañamiento en procesos administrativos y financieros, así como el diseño, instalación y mantenimiento de cableado estructurado, con el fin de fortalecer su competitividad, optimizar sus recursos y contribuir al desarrollo empresarial y tecnológico regional.</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Contacto</h3>
+          <p class="muted">
+            <strong>Teléfono:</strong> +57 3044732046<br><br>
+            <strong>Socios:</strong><br>
+            ACOSTA DE LA HOZ<br>
+            BETANCOURT PALOMINO<br>
+            DAZA BARRAGÁN<br>
+            GARCÍA JIMENES<br>
+            GARCÍA ROMERO<br>
+            FONTALVO BOHORQUEZ
+          </p>
+          <div style="margin-top:8px">
+            <a href="#contact" style="text-decoration:none"><button>Solicitar Cotización</button></a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" style="margin-top:20px" class="card">
+      <h3>Contacto y solicitud de servicio</h3>
+      <form action="https://formsubmit.co/sayinfosolutions@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+        <div class="row">
+          <input type="text" name="nombre" placeholder="Nombre o empresa" required>
+          <input type="tel" name="telefono" placeholder="Teléfono" required>
+        </div>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <select name="servicio">
+          <option>Servicio requerido: Asesoría empresarial</option>
+          <option>Servicio requerido: Montaje de cableado</option>
+          <option>Servicio requerido: Mantenimiento y soporte</option>
+          <option>Otro</option>
+        </select>
+        <textarea name="descripcion" rows="4" placeholder="Descripción del servicio o requerimiento"></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button type="submit">Enviar solicitud</button>
+          <div class="muted">Te responderemos en 2-3 días hábiles.</div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> SAY INFO SOLUTIONS — Visión regional. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
